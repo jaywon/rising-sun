@@ -1,5 +1,8 @@
 body{
  background-color:rgba(255,20,147, 0.6);
+ font-family: 'Ruthie', cursive;
+ font-size:96px;
+ color:#fff;
 }
 
 .sun {
@@ -12,6 +15,15 @@ body{
   height:150px;
   box-shadow: 5px 5px 6px 2px #DC143C;
 
+}
+
+.fuck-it{
+  position:absolute;
+  font-size: 200px;
+  width:100%;
+  margin-top:150px;
+  text-align:center;
+  text-shadow: -5px 5px #000;
 }
 
 div.box:nth-of-type(even){
