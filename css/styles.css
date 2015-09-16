@@ -1,0 +1,42 @@
+body{
+ background-color:rgba(255,20,147, 0.6);
+}
+
+.sun {
+  position:absolute;
+  top:50px;
+  right:150px;
+  border-radius: 50%;
+  background-color: rgba(220,20,60, 0.9);
+  width:150px;
+  height:150px;
+  box-shadow: 5px 5px 6px 2px #DC143C;
+
+}
+
+div.box:nth-of-type(even){
+  margin: 20px;
+  height:50px;
+  width:50px;
+  background-color:rgba(255, 255, 255, 0.9);
+  border-radius: 5px;
+  box-shadow: -3px 3px 0px rgba(0,0,0,0.3);
+}
+
+div.box:nth-of-type(odd){
+  margin: 20px;
+  height:100px;
+  width:100px;
+  background-color:rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: -3px 3px 0px rgba(0,0,0,0.3);
+}
+
+div.box:nth-of-type(even):hover {
+  transform: rotate(5deg);
+  /*transform: skew(20deg, 20deg);*/
+}
+
+div.box:hover {
+  transform: rotate(-10deg);
+}
