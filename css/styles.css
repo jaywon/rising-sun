@@ -26,17 +26,42 @@ body{
   text-shadow: -5px 5px #000;
 }
 
+div.boxes{
+  padding:40px;
+}
+
+div.boxes div.box:nth-child(2n){
+  margin-left:60px;
+  margin-top:5px;
+}
+
+div.boxes div.box:nth-child(3n){
+  margin-left:-20px;
+  margin-top:-45px
+}
+
+div.boxes div.box:nth-child(4n){
+  margin-left:90px;
+  margin-top:25px;
+}
+
+div.boxes div.box:nth-child(5n){
+  margin-left:30px;
+  margin-top:-5px;
+}
+
 div.box:nth-of-type(even){
   margin: 20px;
   height:50px;
   width:50px;
+  transform: rotate(1deg);
   background-color:rgba(255, 255, 255, 0.9);
   border-radius: 5px;
   box-shadow: -3px 3px 0px rgba(0,0,0,0.3);
 }
 
 div.box:nth-of-type(odd){
-  margin: 20px;
+  margin: 20px 20px 20px 40px;
   height:100px;
   width:100px;
   background-color:rgba(255, 255, 255, 0.9);
@@ -46,9 +71,35 @@ div.box:nth-of-type(odd){
 
 div.box:nth-of-type(even):hover {
   transform: rotate(5deg);
-  /*transform: skew(20deg, 20deg);*/
 }
 
 div.box:hover {
   transform: rotate(-10deg);
+}
+
+div.building:nth-of-type(4) {
+  position:absolute;
+  bottom:0;
+  right:200px;
+  border:1px solid #bebebe;
+  background-color:rgba(0, 0, 0, 0.7);
+  box-sizing: border-box;
+  padding:1em;
+  display:block;
+  transform: skewX(-25deg);
+  width:200px;
+}
+
+div.building:nth-of-type(5) {
+  position:absolute;
+  bottom:0;
+  left:400px;
+  border:1px solid #bebebe;
+  background-color:rgba(0, 0, 0, 0.9);
+  box-sizing: border-box;
+  padding:1em;
+  display:block;
+  transform: skewX(5deg);
+  width:200px;
+  height:300px;
 }
